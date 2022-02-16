@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="260.0" prefWidth="484.0" style="-fx-border-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.emergente.AlertController">
+   <children>
+      <BorderPane layoutX="163.0" layoutY="56.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox fx:id="hboxAlert" prefHeight="28.0" prefWidth="397.0" style="-fx-background-color: #38940d;" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="329.0" minWidth="10.0" prefWidth="313.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="169.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="132.0" minHeight="10.0" prefHeight="126.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fx:id="jimg" fitHeight="68.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+                  <Label fx:id="lblmensaje" text="GUARDARDO EXITOSO!">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font></Label>
+                  <JFXButton fx:id="jbtnOk" onAction="#cerrar" prefHeight="31.0" prefWidth="105.0" style="-fx-background-color: #38940d;" text="OK" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
